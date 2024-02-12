@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 20px; 
+}
+
+nav {
+    position: relative;
+    width: 524px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 100%;
+    background: linear-gradient(45deg, #512C76, #2D2337);
+    border-radius: 8px;
+    transition: .5s ease;
+}
+
+nav a:nth-child(1):hover ~ span {
+    left: 0;  
+}
+nav a:nth-child(2):hover ~ span {
+    left: 175px;
+}
+nav a:nth-child(3):hover ~ span {
+    left: 350px;
+    width: 175px;
+}
+
+.btn {
+    border: none; 
+    color: violet; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.primary {
+    background-color: white; 
+    border: 2px solid #007bff;
+}
+
+.primary:hover {
+    background: #0b7dda; 
+    color: white;
+}

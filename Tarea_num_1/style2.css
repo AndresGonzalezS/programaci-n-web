@@ -1,0 +1,34 @@
+/* Estilos CSS para el cuerpo y el botón */
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1{
+  color: white;
+}
+
+header {
+  margin-bottom: 20px; 
+}
+
+.btn {
+  border: none; 
+  color: violet; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.primary {
+  background-color: white; 
+  border: 3px solid #af59f1;
+}
+
+.primary:hover {
+  background: #4a044d; 
+  color: white;
+}
